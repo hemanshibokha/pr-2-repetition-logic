@@ -12,42 +12,17 @@
     var d = parseInt(prompt("enter a value of d:  "));
     console.log("number: " + (d));
 
-    if(a > b){
-        if(a > c){
-            if(a > d){
-                console.log("A is max");
-            }
-            else{
-                console.log("D is max");
-            }
-        }
-        else{
-            if(c > d){
-                console.log("C is max");
-            }
-            else{
-                console.log("D is max");
-            }
-        }
+    if(a > b && a > c && a > d){
+        console.log("A is max");
     }
-    else{
-        if(b > c){
-            if(b > d){
-                console.log("B is max");
-            }
-            else{
-                console.log("D is max");
-            }
-        }
-        else{
-            if(c > d){
-                console.log("C is max");
-            }
-            else{
-                console.log("D is max");
-            }
-        }
+    else if(b > a && b > c && b > d){
+        console.log("A is max");
     }
-
+    else if(c > a && c > b && c > d){
+        console.log("A is max");
+    }
+    else if(a > a && d > b && d > c){
+        console.log("A is max");
+    }
 
 </script>
